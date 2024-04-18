@@ -1,7 +1,7 @@
 jobs:
   - name: test1
     plan:
-      - task: print message
+      - task: print_message
         timeout: 5m
         config:
           run:
