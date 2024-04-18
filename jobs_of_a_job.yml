@@ -1,0 +1,13 @@
+jobs:
+  - name: test1
+    plan:
+      - task: print message
+        image: ci-image
+        timeout: 5m
+        config:
+          run:
+            path: bash
+            args:
+              - -ec
+              - |
+                echo "testing a job"
